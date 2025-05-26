@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.19"></script> <!-- lil-gui -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+  
+    <script src="sketch.js"></script>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+
+    <!-- Main Header Section -->
+    <div class="sidenav-header">
+      <h1>We put people and the planet at the heart of place-making.</h1>
+      <p>
+        The ocean is the lifeblood of our planet—essential to human well-being, climate stability, and biodiversity. By embedding social value in design and aligning with SDG 14, we create spaces that not only serve communities but also respect and protect our marine environments. Prioritising people means ensuring access to clean water, resilient coastlines, and sustainable practices that support both local livelihoods and the health of our oceans.
+      </p>
+    </div>
+
+
+
+    <!-- 2 Column Content Section -->
+    <!-- Left column content -->
+    <div class="flex-container">
+      <div class="column left">
+        <h1 class="column-title">Reviving the blue -The Ocean is the lifeblood of our planet</h1>
+        <p>This interactive media artwork, built with p5.js, raises awareness about Sustainable Development Goal 14: Life Below Water. It underscores the urgency of conserving oceans, addressing pollution, overfishing, and habitat loss, while highlighting the deep connection between ocean health and the planet’s overall well-being. Through a visually engaging and thought-provoking medium, the project emphasizes the ocean’s role not just as a source of biodiversity and sustenance, but as a vital regulator of Earth’s systems.
+
+Inspired by the ocean’s essential role in sustaining life, the project explores its stunning beauty. From vast blue seascapes to intricate marine ecosystems, it invites reflection on what stands to be lost—and what can still be protected.
+
+Built with p5.js, the experience allows users to interact through mouse movement, triggering dynamic responses in images, sounds, and generative visuals. This real-time interaction mirrors the impact of human behavior on marine environments, showing how small actions can either nurture or harm underwater ecosystems.
+
+By blending scientific urgency with interactive storytelling, the project seeks to foster a stronger emotional connection to life below water and inspire responsible, collective action to safeguard the oceans for future generations.
+        </p>
+
+        <!-- Footer/Footnote -->
+        <div class="sidenav-footer">
+          <h6>2025 Reviving The Blue. All rights reserved.</h6>
+        </div>
+
+        <!-- Right column content -->
+      </div>
+      <div class="column right">
+        <h2>Project Members</h2>
+        <ul>
+          <li>Tran Bao Han s4054278</li>
+    
+
+        </ul>
+
+        <hr> <!-- Line after the first list -->
+
+        <h2>Software Used</h2>
+        <ul>
+          <li>P5.js</li>
+          <li>Adobe Illustrator</li>
+          <li>Clip Studio Paint</li>
+    
+        </ul>
+        <hr> <!-- Line after the second list -->
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+  <div id="main">
+    <h2>Read About This Project</h2>
+    <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>
+  </div>
+  </body>
+  
+  
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+
+  </script>
+  
+</html>

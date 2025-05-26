@@ -1,0 +1,167 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+/* lil-gui default positioning is fixed, top-right.
+   We adjust its margin-top via JS in sketch.js to prevent overlap.
+   Custom styling can be added here if needed:
+   .lil-gui {
+     opacity: 0.9;
+   }
+*/
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1001; /* Ensure sidenav is on top of lil-gui (default z-index ~1000 or via stacking context) */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s; 
+  padding-top: 60px;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+/* Styles for the sidenav (specific instance) */
+#mySidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1001; 
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: white;
+}
+
+/* Header Section Styles */
+.sidenav-header {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.sidenav-header h1 {
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidenav-footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  background-color: #111; 
+  box-sizing: border-box;
+  padding: 20px 100px; /* Added padding to match .column padding for consistency */
+}
+
+.sidenav-header p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* margin-bottom: 50px; /* Removed to let padding on footer handle space */
+  box-sizing: border-box;
+}
+
+.column.left {
+  flex: 3;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  color: white;
+  padding: 0 100px 20px 100px; /* Added bottom padding */
+}
+
+.column.right {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  color: white;
+  padding: 0 100px 20px 100px; /* Added bottom padding */
+}
+
+#mySidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; 
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .sidenav-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto; 
+  }
+  .sidenav-header h1 {
+    font-size: 40px; 
+  }
+
+  .flex-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .column.left,
+  .column.right {
+    flex: none;
+    width: 100%;
+    padding: 0 20px 20px 20px; /* Adjusted padding */
+  }
+  .sidenav-footer {
+    padding: 10px 20px;
+  }
+}
