@@ -2,11 +2,7 @@
 Reviving The Blue
 https://github.com/cionaodh44/revivingtheblue
 
-Version 1.0 - 26/3/2024
-
-// Usage Notes
-
-This program generates a dynamic wave animation using sine functions to create smooth oscillating patterns. The waves continuously move over time, creating a mesmerizing effect. Users can interact with the animation by clicking anywhere on the canvas, which will randomize the wave motion.
+Version 3.0 - 26/5/2025
 
 // Installation Instructions
 
